@@ -38,7 +38,7 @@ export const MainContent = () => {
     
         return {
             async then(...params) {
-                return fetch("https://arjun-wedding-backend.onrender.com/api" + path, req)
+                return fetch("BASE_URL" + path, req)
                     .then((res) => res.json())
                     .then((res) => {
                         console.log('the response is',res);
